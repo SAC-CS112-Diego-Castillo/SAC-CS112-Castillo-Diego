@@ -1,123 +1,41 @@
-import java.util.Scanner;
 
 
-public class addition{
+import java.util.Scanner; //program uses class Scanner
 
+public class Solution
+{ 
+  // main method begins execution of Java application
+  public static void main(String[] args)
+  {
+    // create Scanner to obtain input from command window
+   Scanner input = new Scanner(System.in);
 
-public static void main(String[]args)
-{
-// Create a Scanner object
-Scanner input " new Scanner(System.in);
+   int number1; //first integer to add
+   int number2; //second integer to add
+   int sum; // sum of number1 and number2
+   int product; //product of number 1 and number2
+   int difference; //difference of number1 and number2
+   int quotient; //quotient of number1 and number2
 
+   System.out.print("Enter first integer: "); // prompt
+   number1 = input.nextInt(); // read first number from user
 
-// Prompt the user to enter two numbers
-System.out.print("Enter two numbers: ");
-double number1 = input.nextDouble();
-double number2 = input.nextDouble();
+   System.out.print("Enter second integer: "); // prompt
+   number2 = input.nextInt(); // read second number from user
 
+   sum = number1 + number2; // add numbers
+   product = number1 * number2; // multiply numbers
+   difference = number1 - number2; // subtract numbers
+   quotient = number1 / number2; // divide numbers
 
-// Compute sum
-double sum = (number1 + number2);
+   System.out.printf(" Sum is %d\n ", sum); //display sum
 
+   System.out.printf(" Product is %d\n ", product); //display prouduct
 
-// Display result
+   System.out.printf(" Difference is %d\n ", difference); //display difference
 
+   System.out.printf(" Quotient is %d\n ", quotient); //display quotient
 
-Promt the user to enter two numbers
-System.out.print("Enter two numbers; ");
-Double number1 = input.nextDouble();
-Double number2 = input.nextDouble();
+ } // end method main
 
-
-// Compute sum
-Double sum = (number1 + number2);
-
-
-// Display result
-System.out.println("The sum of " + number1 + " " + number2 + " " + " is "
-" + sum);
-
-
-// Compute difference
-double difference = (number1 - number2);
-
-
-// Display result
-System.out.println("The difference of " + number1 + " " + number2 +
-" is " + difference);
-
-
-
-//  Dispute difference
-Double difference = (number1 - number2);
-
-
-// Display result
-System.out.println("The difference of " + number1 + " " + number2 + " is "
-" + difference);
-
-
-// Compute product
-double product = (number1 * number2);
-
-
-// Display result
-System.out.println("The product of " + number1 + " " + number2 + " is "
-" + product);
-
-
-// Compute quoient
-Double quoient = (number1 / number2);
-
-
-// Display result
-System.out.println("The quoient of " + number1 + " " + number2 + " is "
-" + quoient);
-
-
-// Compute quoient
-Double quoient " (number1 / number2);
-
-
-// Display result
-System.out.println("The difference of " + number1 + " " + number2 + " is "
-" + difference);
-
-
-// Compute product
-double product = (number1 * number2);
-
-
-// Display result
-System.out.println("The product of " + number1 + " " + number2 + " is "
-" + product);
-
-
-// Compute quoient
-Double quoient = (number1 / number2);
-
-
-// Display result
-System.out.println("The quoient of " + number1 + " " + number2 + " is "
-" + quoient);
-
-
-// Compute quoient
-Double quoient " (number1 / number2);
-
-
-// Display result
-System.out.println("The product of " + number1 + " " + number2 + " is "
-quoient);
-
-
-// Compute remainder
-Double remainder = (number1 % number2);
-
-
-// Display remainder
-System.out.println("The remainder of " + number + " " + number2 + " is "
-remainder);
-
-
-}
+} // end class Addition
